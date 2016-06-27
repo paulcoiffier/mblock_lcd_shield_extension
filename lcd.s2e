@@ -1,0 +1,26 @@
+{	"extensionName": "Contrôleur LCD",
+	"sort":0,  
+	"javascriptURL":"js/lcd_shield.js", // define the path of JavaScript file
+    "firmware":"1.0",  // firmware version 
+    "extensionPort":0, // network port of extension, 0 for serial port
+	"blockSpecs": [ // module defining array
+		[
+			"w",
+			"LCD afficher : %s",
+			"show_text",
+			"valeur",
+			{
+				"setup":"",
+				"inc":"#include \"lcd_shield.h\"",
+				"def":"LcdShieldClass lcd; \n",
+				"work":"lcd.show_text({0}); \n",
+				"loop":""
+			}
+		]
+	],
+	"translators":{
+		"fr_FR":{ // Chinese version
+			"LCD controller":"Contrôleur LCD"
+			}
+	}
+}
