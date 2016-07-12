@@ -7,7 +7,7 @@ const int numRows = 2;
 const int numCols = 16;
 
 LcdShieldClass::LcdShieldClass(){
-   // On défini l'écran sur 16 caractères et 2 lignes
+   // On dÃ©fini l'Ã©cran sur 16 caractÃ¨res et 2 lignes
    lcd_screen.begin(16, 2);   
    // Position initiale du curseur
    lcd_screen.setCursor(0,0);
@@ -16,7 +16,7 @@ LcdShieldClass::LcdShieldClass(){
 
 void LcdShieldClass::show_text (String text)
 {
-	
+	lcd_screen.clear();
 	String line_one = "";
 	String line_two = "";
 
