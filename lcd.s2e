@@ -1,9 +1,13 @@
 {	"extensionName": "Contrôleur LCD",
+	"description": "Controler un shield afficheur LCD",
+	"version": "1.1",
+	"author": "Paul Coiffier (coiffier.paul@gmail.com)",
+	"homepage": "https://github.com/paulcoiffier/mblock_lcd_shield_extension",
 	"sort":0,  
-	"javascriptURL":"js/lcd_shield.js", // define the path of JavaScript file
-    "firmware":"1.0",  // firmware version 
-    "extensionPort":0, // network port of extension, 0 for serial port
-	"blockSpecs": [ // module defining array
+	"javascriptURL":"js/lcd_shield.js", 
+  "firmware":"1.0",
+  "extensionPort":0,
+	"blockSpecs": [
 		[
 			"w",
 			"LCD afficher : %s",
@@ -19,8 +23,5 @@
 		]
 	],
 	"translators":{
-		"fr_FR":{ // Chinese version
-			"LCD controller":"Contrôleur LCD"
-			}
 	}
 }
